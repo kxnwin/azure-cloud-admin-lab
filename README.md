@@ -16,26 +16,31 @@ governance, networking — that the next step in my career requires.
 
 ## Roadmap
 
-- [ ] **Phase 1 — Environment Setup**
-  - [ ] Create free Azure account
-  - [ ] Familiarize with Azure Portal navigation
-- [ ] **Phase 2 — Entra ID Fundamentals**
-  - [ ] Create test users and groups
-  - [ ] Explore and assign built-in RBAC roles
-  - [ ] Configure a Conditional Access policy
-  - [ ] Create a Dynamic Group with an attribute-based rule
-- [ ] **Phase 3 — Core Azure Resource Management**
-  - [ ] Create a Resource Group and deploy a free-tier VM
-  - [ ] Practice start/stop/resize operations
-  - [ ] Build a Virtual Network + subnet
-  - [ ] Apply an Azure Policy (e.g., required tagging)
-- [ ] **Phase 4 — Hybrid Identity Tie-In**
-  - [ ] Document how on-prem AD users sync into Entra ID via Entra Connect
-  - [ ] Confirm synced users receive correct cloud RBAC roles
-  - [ ] Write up the end-to-end hybrid identity flow
-- [ ] **Phase 5 — AZ-104 Prep**
-  - [ ] Work through Microsoft Learn's AZ-104 learning path
-  - [ ] Schedule/take the AZ-104 exam
+* \[ ] **Phase 1 — Environment Setup**
+
+  * \[ ] Create free Azure account
+  * \[ ] Familiarize with Azure Portal navigation
+* \[ ] **Phase 2 — Entra ID Fundamentals**
+
+  * \[ ] Create test users and groups
+  * \[ ] Explore and assign built-in RBAC roles
+  * \[ ] Configure a Conditional Access policy
+  * \[ ] Create a Dynamic Group with an attribute-based rule
+* \[ ] **Phase 3 — Core Azure Resource Management**
+
+  * \[ ] Create a Resource Group and deploy a free-tier VM
+  * \[ ] Practice start/stop/resize operations
+  * \[ ] Build a Virtual Network + subnet
+  * \[ ] Apply an Azure Policy (e.g., required tagging)
+* \[ ] **Phase 4 — Hybrid Identity Tie-In**
+
+  * \[ ] Document how on-prem AD users sync into Entra ID via Entra Connect
+  * \[ ] Confirm synced users receive correct cloud RBAC roles
+  * \[ ] Write up the end-to-end hybrid identity flow
+* \[ ] **Phase 5 — AZ-104 Prep**
+
+  * \[ ] Work through Microsoft Learn's AZ-104 learning path
+  * \[ ] Schedule/take the AZ-104 exam
 
 ## Repo structure
 
@@ -58,16 +63,16 @@ azure-cloud-admin-lab/
 
 Each phase folder has a `notes.md` — jot down what you did, screenshots
 (drop image files in the same folder and link them), what broke, and what
-you learned. This is what turns into interview talking points later, so
-write it like you're explaining it to someone else, not just to yourself.
+you learned.
 
-## Tools & environment
+## Tools \& environment
 
-- **Platform:** Microsoft Azure (free tier)
-- **Identity:** Microsoft Entra ID
-- **Learning path:** Microsoft Learn — AZ-104 (Azure Administrator Associate)
-- **Companion project:** On-prem Hyper-V hybrid AD/Entra ID lab (desktop)
+* **Platform:** Microsoft Azure (free tier)
+* **Identity:** Microsoft Entra ID
+* **Learning path:** Microsoft Learn — AZ-104 (Azure Administrator Associate)
+* **Companion project:** On-prem Hyper-V hybrid AD/Entra ID lab (desktop)
 
 ## Status
 
-🟡 In progress — Phase 1 starting.
+🟡 In progress — Phase 1 complete, starting Phase 2.
+
