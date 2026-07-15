@@ -16,5 +16,13 @@ by accident
 
 ## Notes
 
-Created an Azure account. I had to enter a phone number and card on file even though it's free, did not expect to have to do that. The dashboard showed $200 in credit right away. I set up a $5 budget with an 80% alert so that I could get an email before anything unexpected happened. Explored the portal a bit, looking at the Entra ID and Resource Groups in the left sidebar. Resource Groups was empty since nothing has been created yet.  
+Task 1) Created an Azure account. One thing that caught me off-guard was that it asked for my phone number and to put a card on file, even though it was free, did not expect that. 
+
+
+
+Task 2) Azure dashboard showed $200 in credit right away, which confirmed how they would provide the credit with the free-trial.
+
+
+
+Task 3) I explored the Azure portal a bit, reviewing the services that they provided within the left sidebar, more thoroughly with the Entra ID service. I noticed the Resource Groups service was empty as there was not one created yet. 
 
