@@ -74,5 +74,5 @@ you learned.
 
 ## Status
 
-🟡 In progress — Phase 2 partially complete (user/group/RBAC done, Conditional Access + Dynamic Groups pending Entra ID P1 trial). Phase 3 partially complete at the moment.
+🟡 In progress — Phase 2 partially complete (user/group/RBAC done, Conditional Access + Dynamic Groups pending Entra ID P1 trial). Phase 1 and 3 completed. Moving to Phase 4.
 
