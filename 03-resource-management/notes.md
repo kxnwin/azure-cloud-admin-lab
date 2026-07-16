@@ -23,15 +23,13 @@ Task 2) Next, I navigated to Compute infrastructure service, went into the Virtu
 
 
 
-Task 3) With the virtual machine (vm) created, I first tested out the start and stop functions for the vm within the profile, fairly quick and easy to do. Next I went resize the vm by navigating to Size section under the Availability + scale tab. I wanted to see how the resizing process worked so I resized the vm to D4s\_v3 version size with 4 vCPUs and 16 RAM, which costs $274.48 per month, definitely over my credit limit. So I went ahead and resized it back to D4s\_v3 version with 2 vCPUs and 8 RAM as it is more cost efficient to run. The resizing process itself was also fairly quick and easy to do. See VM\_Resize.png screenshot.
+Task 3) With the virtual machine (vm) created, I first tested out the start and stop functions for the vm within the profile, fairly quick and easy to do. Next I went resize the vm by navigating to Size section under the Availability + scale tab. I wanted to see how the resizing process worked so I resized the vm to D4s\_v3 version size with 4 vCPUs and 16 RAM, which costs $274.48 per month, definitely over my credit limit. So I went ahead and resized it back to D2s\_v3 version with 2 vCPUs and 8 RAM as it is more cost efficient to run. The resizing process itself was also fairly quick and easy to do. See VM\_Resize.png screenshot.
 
 
 
-Task 4) I tried my hands on building a virtual network and subnet. I navigated to the Virtual networks service of the Azure portal and created a virtual network named "vnet-lab-01". I set the address as 10.1.0.0/16 so it doesn't overlap my existing VM's vnet, which is likely 10.0.0.0/16. Aside from the default subnet I was provided, I added my own, named "subnet-lab-01" with an address of 10.1.1.0/24 so no overlapping occurs with the default subnet. I Kept all other settings at default, reviewed, and deployed my first virtual network after validation passed. See "vnet+subnet\_creation.png" See "vnet\_deployed". 
+Task 4) I tried my hands on building a virtual network and subnet. I navigated to the Virtual networks service of the Azure portal and created a virtual network named "vnet-lab-01". I set the address as 10.1.0.0/16 so it doesn't overlap my existing VM's vnet, which is likely 10.0.0.0/16. Aside from the default subnet I was provided, I added my own, named "subnet-lab-01" with an address of 10.1.1.0/24 so no overlapping occurs with the default subnet. I Kept all other settings at default, reviewed, and deployed my first virtual network after validation passed. See "vnet+subnet\_creation.png" See "vnet\_deployed".
 
 
 
 Task 5) Lastly, I worked on applying an Azure policy. I navigated to the Policy service. Went to the definitions tab under the authoring section. There were many policies listed, so I searched for the "require a tag on resources" policy. Once found, I went through the policy assignment process. I set the scope to the "rg-lab-eastus" resource group, then set the tag name as "Environment". Next, I kept all other setting defaults, then review and created the policy. See "policy\_assigned.png"
-
-
 
