@@ -16,22 +16,22 @@ governance, networking — that the next step in my career requires.
 
 ## Roadmap
 
-* \[ ] **Phase 1 — Environment Setup**
+* \[x] **Phase 1 — Environment Setup**
 
-  * \[ ] Create free Azure account
-  * \[ ] Familiarize with Azure Portal navigation
-* \[ ] **Phase 2 — Entra ID Fundamentals**
+  * \[x] Create free Azure account
+  * \[x] Familiarize with Azure Portal navigation
+* \[x] **Phase 2 — Entra ID Fundamentals**
 
-  * \[ ] Create test users and groups
-  * \[ ] Explore and assign built-in RBAC roles
-  * \[ ] Configure a Conditional Access policy
-  * \[ ] Create a Dynamic Group with an attribute-based rule
-* \[ ] **Phase 3 — Core Azure Resource Management**
+  * \[x] Create test users and groups
+  * \[x] Explore and assign built-in RBAC roles
+  * \[x] Configure a Conditional Access policy
+  * \[x] Create a Dynamic Group with an attribute-based rule
+* \[x] **Phase 3 — Core Azure Resource Management**
 
-  * \[ ] Create a Resource Group and deploy a free-tier VM
-  * \[ ] Practice start/stop/resize operations
-  * \[ ] Build a Virtual Network + subnet
-  * \[ ] Apply an Azure Policy (e.g., required tagging)
+  * \[x] Create a Resource Group and deploy a free-tier VM
+  * \[x] Practice start/stop/resize operations
+  * \[x] Build a Virtual Network + subnet
+  * \[x] Apply an Azure Policy (e.g., required tagging)
 * \[ ] **Phase 4 — Hybrid Identity Tie-In**
 
   * \[ ] Document how on-prem AD users sync into Entra ID via Entra Connect
