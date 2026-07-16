@@ -10,8 +10,8 @@ on-prem AD work already done day-to-day at work.
 * \[x] Create test users and groups
 * \[x] Explore built-in roles (Global Admin, User Admin, etc.)
 * \[x] Assign RBAC roles to test users
-* \[ ] Configure a Conditional Access policy
-* \[ ] Create a Dynamic Group using an attribute-based rule
+* \[x] Configure a Conditional Access policy
+* \[x] Create a Dynamic Group using an attribute-based rule
 
 ## Notes
 
@@ -31,5 +31,21 @@ Task 3) After creating my first test user and group, I explored the built-in rol
 
 
 
-Task 4 \& 5) TBD, requires Microsoft Entra premium, which unfortunately come with the free trial of Azure. I will return to these two tasks once I complete the rest of the phases and finding if any other tasks requires premium as well, as then will I register for the free trial of premium. For the moment though, if I were to create a conditional access policy for Sarah, I would name the policy "Require MFA". The condition for it will be if they are working outside of company network, then they will be required to sign in with multifactor authentication.
+Task 4) To begin this task, I first had to go through a series of steps to retrieve a Microsoft Entra ID P1 license (free trial). First I created an Administrator user with the global administrator role, in order for me to access the Microsoft Admin 365, as it only allowed login from a work account. After creating the Administrator user through Azure's Microsoft Entra ID service, I signed into Microsoft Admin 365 center with the Admin's User Principal Name and password I made for it. I had to set up authentication with Microsoft Authenticator as well as it required me before I could get logged in. Once I set that up, I logged in and looked for the Microsoft Entra ID P1 license (free trial) in the billing section and started the trial. 
+
+
+
+Once I had the license added, I assigned the license to the user Sarah through the Active users section of the Microsoft 365 Admin center. I did bump into a small issue where it wasn't allowing me to assign the license to the user because their usage location was not set. Once I set to United Stated for Sarah, I was able to assign the license. I confirmed that Sarah was assigned the license on the Azure portal, I can now start this task. 
+
+
+
+First I went to the Microsoft Entra admin center, a view that I was quite familiar with as I currently use this admin center at my current service desk job daily. I navigated to the conditional access section, went to policies tab, then created a new policy from there. I named the conditional access policy "Require MFA" and assigned it to Sarah. Before I could create the policy, I had to first disable security defaults, as I wouldn't allow be to create the policy without disabling it first. After doing so, I selected All resources as Target resources and for the access control, I selected Require multifactor authentication as a control to grant, then created the policy. See "Conditional\_Access\_Policy\_Created.png" 
+
+
+
+I now had my first conditional access policy enabled, Require MFA, which is assigned to Sarah whom now has to authenticate upon login. I tested this policy out by signing into portal.azure.com as Sarah and then it gives me a message to keep the account secure by setting up authentication, which tells me that the policy is working. I know this because again, I do assist with this task for end users at my job almost daily, helping them register/reset MFA using Microsoft Authenticator. See "Require\_MFA\_Policy\_Test.png".
+
+
+
+Task 5) Last task was to create a dynamic group. I navigated from Microsoft Entra Admin center to the groups section > all groups > new group. I named the Dynamic group "DG\_Accounting", set the group type as Security, and changed to Dynamic User for the membership type. A dynamic query linked popped up afterwards, which I clicked on and it opened up a rule builder. I used the simple UI provided to create a rule: Property = department, Operator = Equals, Value = Accounting. Once the dynamic group was created, I went back to Azure portal and updated Sarah's department to Accounting as it was initially blank. By doing this, the user will get picked up by the rule I've created from the dynamic group since it only cares if the department was Accounting. In just a few seconds, the Dynamic group already had one user added after being created, which was Sarah. This confirmed the rule within the DG\_Accounting group was a success! See "Dynamic\_Group\_Created.png".
 
