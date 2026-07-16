@@ -74,5 +74,5 @@ you learned.
 
 ## Status
 
-🟡 In progress — Phase 2 partially complete (user/group/RBAC done, Conditional Access + Dynamic Groups pending Entra ID P1 trial). Phase 1 and 3 completed. Moving to Phase 4.
+🟡 In progress — Hyper-V lab in progress, must be set up properly before starting phase 4.
 
