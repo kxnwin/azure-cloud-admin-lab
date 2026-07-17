@@ -33,3 +33,12 @@ Task 4) Set up a budget in Cost Management with an alert threshold at $5, to cat
 
 
 Lesson: A low alert threshold is worth setting even on a small lab budget- cost overruns on cloud resources can happen quickly and quietly if nothing's watching.
+
+
+
+## Key Terms
+
+* Resource Group: A logical container that holds related Azure resources (VMs, networks, storage, etc.) for a project or workload.
+* Entra ID: Microsoft's cloud-based identity and access management service (formerly Azure Active Directory).
+* Cost Management: The Azure service used to track spend, set budgets, and configure alerts.
+Budget/Spending Alert: A threshold-based notification that fires when spend reaches a set dollar amount or percentage of a budget.
