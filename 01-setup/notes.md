@@ -30,9 +30,7 @@ Task 3) Explored the portal, many different categories of services, spending mor
 
 Task 4) Set up a budget in Cost Management with an alert threshold at $5, to catch any unexpected spend early rather than risk burning through the $200 credit unnoticed.
 
-
-
-Lesson: A low alert threshold is worth setting even on a small lab budget- cost overruns on cloud resources can happen quickly and quietly if nothing's watching.
+*  Lesson: A low alert threshold is worth setting even on a small lab budget- cost overruns on cloud resources can happen quickly and quietly if nothing's watching.
 
 
 
