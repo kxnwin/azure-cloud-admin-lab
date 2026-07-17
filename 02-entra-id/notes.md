@@ -47,9 +47,7 @@ Task 4) Configured a conditional Access policy requiring MFA.
 
 Task 5) Created a Dynamic Group ("DG_Accounting") with membership type set to Dynamic User, using the rule department Equals Accounting. Sarah's department attribute was initially blank, so no members matched until it was updated to "Accounting" — after which she was picked up by the rule within seconds, confirming the dynamic query worked correctly. See "Dynamic_Group_Created.png" and "Dynamic_Group_Assigned.png".
 
-
-
-Lesson: Dynamic group membership is purely attribute-driven — being in a related static group (like Accounting) has no bearing on it. The actual attribute has to be populated on the user object.
+* Lesson: Dynamic group membership is purely attribute-driven — being in a related static group (like Accounting) has no bearing on it. The actual attribute has to be populated on the user object.
 
 
 
