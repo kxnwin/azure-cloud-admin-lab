@@ -50,3 +50,18 @@ Task 5) Created a Dynamic Group ("DG_Accounting") with membership type set to Dy
 
 
 Lesson: Dynamic group membership is purely attribute-driven — being in a related static group (like Accounting) has no bearing on it. The actual attribute has to be populated on the user object.
+
+
+
+## Key Terms
+
+* RBAC (Role-Based Access Control): Assigns permissions to users based on an assigned role rather than granting access individually.
+* Security Group: A group type used to manage access to resources (as opposed to a Microsoft 365 Group, which is collaboration-focused).
+* Billing Administrator: A built-in Entra ID role scoped to managing billing and subscription-related tasks.
+* Conditional Access: A policy engine that enforces access controls (like requiring MFA) based on conditions such as user, location, or device.
+* Security Defaults: Microsoft's baseline, one-size-fits-all tenant security settings; must be disabled to use custom Conditional Access policies.
+MFA (Multi-Factor Authentication): Requires a second verification step beyond a password to sign in.
+* Entra ID P1: A premium licensing tier that unlocks features like Conditional Access and Dynamic Groups.
+* Usage Location: A user attribute specifying their country/region, required before certain licenses can be assigned.
+* B2B Guest Account: An external identity invited into a tenant, distinct from a native work/school account — has different sign-in behavior for some admin tools.
+* Dynamic Group: A group whose membership is automatically calculated based on user or device attributes, rather than manually assigned.
