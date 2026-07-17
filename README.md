@@ -3,8 +3,7 @@
 Hands-on Azure/Microsoft Entra ID administration lab, built to develop real
 cloud administration skills toward a Systems Administrator → Cloud
 Administrator career path. This lab runs in parallel with a separate
-[hybrid on-prem Active Directory + Entra ID lab](#) (link once that repo is
-public), and Phase 4 below ties the two together.
+[hybrid on-prem Active Directory + Entra ID lab](https://github.com/kxnwin/onprem-hybrid-identity-lab), and Phase 4 below ties the two together.
 
 ## Why this lab exists
 
