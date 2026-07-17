@@ -33,7 +33,7 @@ Task 2) Deployed the first VM into the resource group — the more involved task
 
 Task 3) Tested start/stop/ functions on the VM — quick and straightforward. Then practiced resizing via Availiability + scale → Size: resized up to D4s_v3 (4 vCPUs, 16GB RAM, $274.48/month) to see the process work, then resized back down to D2s_v3 (2 vCPUs, 8GB RAM) for cost efficiency. Resize operation itself was fast in both directions. See "VM_Resize.png". 
 
-Lesson: Resizing is quick and low-risk to test on a lab VM, but the cost swing between sizes can be dramatic — worth checking the monthly estimate before committing to a size for anything beyond a quick test.
+* Lesson: Resizing is quick and low-risk to test on a lab VM, but the cost swing between sizes can be dramatic — worth checking the monthly estimate before committing to a size for anything beyond a quick test.
 
 
 Task 4) Built a virtual network and subnet. Created "vnet-lab-01" with address space 10.1.0.0/16 — chosen to avoid overlap with the existing VM's vnet (10.0.0.0/16). Added a second subnet, "subnet-lab-01" (10.1.10/24), alongside the default subnet, again to avoid any overlap. All other settings left at default; deployed after validation passed. See "vnet+subnet_creation.png" and "vnet_deployed.png"
