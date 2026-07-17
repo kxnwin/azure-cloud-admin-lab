@@ -17,25 +17,32 @@ governance, networking — that the next step in my career requires.
 
 * \[x] **Phase 1 — Environment Setup**
 
-  * \[x] Create free Azure account
-  * \[x] Familiarize with Azure Portal navigation
+  * [x] Create free Azure account
+  * [x] Note what's included (credit, free services, always-free tier)
+  * [x] Explore the portal (Entra ID, Virtual Machines, Resource Groups)
+  * [x] Set a spending alert/budget
+
+
 * \[x] **Phase 2 — Entra ID Fundamentals**
 
   * \[x] Create test users and groups
   * \[x] Explore and assign built-in RBAC roles
   * \[x] Configure a Conditional Access policy
   * \[x] Create a Dynamic Group with an attribute-based rule
+
 * \[x] **Phase 3 — Core Azure Resource Management**
 
   * \[x] Create a Resource Group and deploy a free-tier VM
   * \[x] Practice start/stop/resize operations
   * \[x] Build a Virtual Network + subnet
   * \[x] Apply an Azure Policy (e.g., required tagging)
+
 * \[ ] **Phase 4 — Hybrid Identity Tie-In**
 
   * \[ ] Document how on-prem AD users sync into Entra ID via Entra Connect
   * \[ ] Confirm synced users receive correct cloud RBAC roles
   * \[ ] Write up the end-to-end hybrid identity flow
+
 * \[ ] **Phase 5 — AZ-104 Prep**
 
   * \[ ] Work through Microsoft Learn's AZ-104 learning path
@@ -73,5 +80,5 @@ you learned.
 
 ## Status
 
-🟡 In progress — Hyper-V lab in progress, must be set up properly before starting phase 4.
+🟡 In progress — On-Prem lab in progress, must be set up properly before starting phase 4.
 
