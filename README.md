@@ -37,11 +37,11 @@ governance, networking — that the next step in my career requires.
   * \[x] Build a Virtual Network + subnet
   * \[x] Apply an Azure Policy (e.g., required tagging)
 
-* \[ ] **Phase 4 — Hybrid Identity Tie-In**
+* \[x] **Phase 4 — Hybrid Identity Tie-In**
 
-  * \[ ] Document how on-prem AD users sync into Entra ID via Entra Connect
-  * \[ ] Confirm synced users receive correct cloud RBAC roles
-  * \[ ] Write up the end-to-end hybrid identity flow
+  * \[x] Document how on-prem AD users sync into Entra ID via Entra Connect
+  * \[x] Confirm synced users receive correct cloud RBAC roles
+  * \[x] Write up the end-to-end hybrid identity flow
 
 * \[ ] **Phase 5 — AZ-104 Prep**
 
@@ -80,5 +80,5 @@ you learned.
 
 ## Status
 
-🟡 In progress — On-Prem lab in progress, must be set up properly before starting phase 4.
+🟡 In progress — Prepping for AZ-104 Exam.
 
