@@ -25,7 +25,7 @@ Created a Security group named "Accounting" (description: security group for the
 
 
 
-Task 2) Reviewed the built-in roles under Roles and Administration, looking for one that would realistic ally fit Sarah's department. See "Roles.png"
+Task 2) Reviewed the built-in roles under Roles and Administration, looking for one that would realistically fit Sarah's department. See "Roles.png"
 
 
 
