@@ -33,6 +33,10 @@ Task 3) Assigned Sarah the Billing Administator role via her user profile → As
 
 
 
+Note (added later, during on-prem lab Phase 4): Billing Administrator is a Microsoft Entra ID directory role, not Azure RBAC — an important distinction discovered while verifying hybrid sync behavior in the on-prem lab. Directory roles govern permissions within Entra ID/M365 admin functions; Azure RBAC governs permissions on Azure resources (VMs, resource groups, etc.) via IAM. True Azure RBAC (group-based, assigned to DG\_Accounting on rg-lab-eastus) was completed as part of on-prem lab Phase 4's hybrid identity verification — see \[on-prem lab Phase 4 notes].
+
+
+
 Task 4) Configured a conditional Access policy requiring MFA.
 
 * Retrieving a Microsoft Entra ID P1 trial license was a prerequisite. This required creating a dedicated Global Administrator account, since the Microsoft 365 admin center only accepts sign-in from a work account (the existing account was a guest/personal-account identity). MFA setup via Microsoft Authenticator was required to complete that admin account's first login.
