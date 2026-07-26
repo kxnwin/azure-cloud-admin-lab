@@ -28,25 +28,27 @@ Added the "Accounting" group membership to Sarah through Microsoft Entra ID → 
 
 Reviewed the built-in Microsoft Entra ID roles through Microsoft Entra ID → Roles and administrators. See "Roles.png" Found the "Billing Administrator" role which suites Sarah based on her department (Accounting).
 
- Assigned Sarah the role via Microsoft Entra ID → Users → Sarah Mitchell → Assigned roles → Add Assignments. See "User_Role_Assigned.png".
+Assigned Sarah the role via Microsoft Entra ID → Users → Sarah Mitchell → Assigned roles → Add Assignments. See "User_Role_Assigned.png".
 
-Explored Azure RBAC roles via Resource Manager → Resource Groups → rg-lab-eastus → Access Control (IAM) → Add role assignment. Selected the "Reader" RBAC role and assigned it to the Accounting dynamic group we created in task 4. See "Azure_RBAC_Role_Assigned.png".    
+Explored Azure RBAC roles via Resource Manager → Resource Groups → rg-lab-eastus → Access Control (IAM) → Add role assignment. Selected the "Reader" RBAC role, a common role for users who can see resources, their configurations, settings, metrics but can't create, modify, or delee anything, and assigned it to the DG_Acounting dynamic group we created in task 4. See "Azure_RBAC_Role_Assigned.png".    
 
 Lesson: Directory roles govern permissions within Entra ID/M365 admin functions; Azure RBAC governs permissions on Azure resources (VMs, resource groups, etc.) via IAM. 
 
-**Task 3 - Configured a conditional Access policy requiring MFA**
+**Task 3 - Configured a Conditional Access policy requiring MFA**
 
-Retrieving a Microsoft Entra ID P1 trial license was a prerequisite. This required creating a dedicated Global Administrator account, since the Microsoft 365 admin center only accepts sign-in from a work account (the existing account was a guest/personal-account identity). MFA setup via Microsoft Authenticator was required to complete that admin account's first login.
+Before beginning to configure a conditional access policy, retrieving a Microsoft Entra ID P1 trial license was a prerequisite. This required creating a dedicated Global Administrator account, since the Microsoft 365 admin center only accepts sign-in from a work account (the existing account was a guest/personal-account identity). Signed into the admin center with the Administrator user credentials created. MFA setup via Microsoft Authenticator was required to complete that admin account's first login. Once completed, admin login was successful to get onto the admin center. 
 
-Started the Entra ID P1 trial from the Billing section of the M365 admin center, then assigned the license to Sarah. Hit a licensing error — assignment was blocked until Sarah's usage location was set to United States, after which the license applied successfully.
+Navigated to Entra ID P1 trial license by going through Microsoft 365 admin center → Marketplace → All products → Microsoft Entra ID P1 Trial. Had to set up payment method as required although it won't charge for the free trial.
 
-Built the Conditional Access policy ("Require MFA") in the Entra admin center, scoped to Sarah, targeting all resources, with "Require multifactor authentication" as the grant control. Security defaults had to be disabled first, since Conditional Access and Security Defaults are mutually exclusive. See "Conditional_Access_Policy_Created.png"
+Once Microsoft Entra ID P1 Trial license was added to the account, assigned the license to test user Sarah by going through Billing → Licenses → Microsoft Entra ID P1 → Assign licenses. Hit a licensing error — assignment was blocked until Sarah's usage location was set to United States, after which the license applied successfully. See "Entra_ID_P1_License_Assigned.png".
 
-Verified the policy by signing in as Sarah at portal.azure.com — she was prompted to set up MFA, confirming enforcement. See "Require_MFA_Policy_Test.png"
+Built the Conditional Access policy ("Require MFA") through Microsoft Entra admin center → Entra ID → Conditional Access → Create new policy. Scoped policy to Sarah, targeting all resources, with "Require multifactor authentication" as the grant control. Security defaults had to be disabled first, since Conditional Access and Security Defaults are mutually exclusive. See "Conditional_Access_Policy_Created.png"
+
+Verified the conditional access policy by signing in as Sarah at portal.azure.com — she was prompted to set up MFA, confirming enforcement. See "Require_MFA_Policy_Test.png"
 
 **Task 4 - Create a Dynamic Group with an attribute-based rule** 
 
-Created a Dynamic Group ("DG_Accounting") with membership type set to Dynamic User, using the rule department Equals Accounting. Sarah's department attribute was initially blank, so no members matched until it was updated to "Accounting" — after which she was picked up by the rule within seconds, confirming the dynamic query worked correctly. See "Dynamic\_Group\_Created.png" and "Dynamic_Group_Assigned.png".
+Navigated to Entra ID → Groups → New group. Created a Dynamic Group ("DG_Accounting") with membership type set to Dynamic User, using the rule "department Equals Accounting". Sarah's department attribute was initially blank, so no members matched until it was updated to Accounting — after which she was picked up by the rule within seconds, confirming the dynamic query worked correctly. See "Dynamic_Group_Created.png" and "Dynamic_Group_Assigned.png". 
 
 Lesson: Dynamic group membership is purely attribute-driven — being in a related static group (like Accounting) has no bearing on it. The actual attribute has to be populated on the user object.
 
