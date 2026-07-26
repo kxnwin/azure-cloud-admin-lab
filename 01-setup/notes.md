@@ -26,13 +26,17 @@ by accident
 
 **Task 3 - Explore the portal: Virtual Machines, Entra ID, Resource Groups**
 
- Explored the portal and its vast amount of services and resources. Spent more time in Microsoft Entra ID specifically (See "Microsoft_Entra_ID.png" (Entra ID overview shown here reflects a later point in the lab (Microsoft Entra ID P1, 3 Users)— this screenshot was taken during phase 2 work rather than the original phase 1 exploration, but the portal layout/navigation is identical either way). I was familar with the Users section of the Entra ID as I use it daily at my current service desk job within the Microsft Entra admin center, looking at users' information like their properties, groups, and licenses. Looked over virtual machines and resource groups to get a feel for two commonly used services before touching them directly in later phases. Resource Groups was empty at this point since none had been created yet. 
+Explored the portal and its vast amount of services and resources. Spent more time in Microsoft Entra ID specifically See "Microsoft_Entra_ID.png" (Entra ID overview shown here reflects a later point in the lab (Microsoft Entra ID P1, 3 Users)— this screenshot was taken during phase 2 work rather than the original phase 1 exploration, but the portal layout/navigation is identical either way).
+ 
+I was familar with the Users section of the Entra ID as I use it daily at my current service desk role, utilizing the Microsft Entra admin center and looking at users' information like their properties, groups, and licenses. 
+
+Looked over virtual machines and resource groups to get a feel for two commonly used services before touching them directly in later phases. Resource Groups was empty at this point since none had been created yet. 
 
 **Task 4 - Set a spending alert/budget so the free tier doesn't get exceeded by accident**
 
-Set up a budget in Cost Management with an alert threshold at $5, to catch any unexpected spend early rather than risk burning through the $200 credit unnoticed.
+Set up a budget via Azure's Cost Management tool. Created an alert threshold at $5, to catch any unexpected spend early rather than risk burning through the $200 credit unnoticed.
 
-*  Lesson: Setting a spending alert matters even on a small lab budget — going over a limit without noticing means spending more than intended, which is a real cost risk in a company setting if left unmonitored.
+Lesson: Setting a spending alert matters even on a small lab budget — going over a limit without noticing means spending more than intended, which is a real cost risk in a company setting if left unmonitored.
 
 ## Key Terms
 
