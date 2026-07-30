@@ -7,21 +7,21 @@ Administrator career path. This lab runs in parallel with a separate
 
 ## Why this lab exists
 
-This lab is something I built to learn cloud administration skills, mainly around the Azure portal and Microsoft Entra ID, which I work with daily at my job. Day-to-day, my work in Active Directory and Entra ID is mostly looking things up like user accounts, group memberships, MFA methods, and lockout status to help troubleshoot issues. I also use an internal tool that can do some of those things as well but also gives me the ability to reset user passwords. This lab is where I go past day-to-day troubleshooting and actually practice the admin side: creating users and groups, assigning roles, setting up policies, that kind of thing. 
+This lab is something I built to learn cloud administration skills, mainly around the Azure portal and Entra ID, which I utilize constantly at my job. My daily work in Active Directory and Entra ID is mostly looking things up like user accounts, group memberships, MFA methods, and lockout status to help troubleshoot issues. I also use an internal tool that can do some of those things as well but also gives me the ability to reset user passwords. This lab is where I go past day-to-day troubleshooting and actually practice the admin side: creating users and groups, assigning roles, setting up policies, that kind of thing. 
 
 ## Roadmap
 
 * [x] **Phase 1 — Environment Setup**
 
   * [x] Create a free Azure account (portal.azure.com)
-  * [x] Note what's included (credit, free services, always-free tier)
+  * [x] Note what's included (credit, 12 months of free services, always-free tier)
   * [x] Explore the portal (Entra ID, Virtual Machines, Resource Groups)
   * [x] Set a spending alert/budget
 
 * [x] **Phase 2 — Entra ID Fundamentals**
 
   * [x] Create test users and groups
-  * [x] Explore and assign built-in Microsoft Entra ID and Azure roles
+  * [x] Explore and assign built-in Entra ID and Azure roles
   * [x] Configure a Conditional Access policy
   * [x] Create a Dynamic Group with an attribute-based rule
 
