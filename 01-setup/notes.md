@@ -7,7 +7,7 @@ before deploying any actual infrastructure.
 
 ## Tasks
 
-* [x] Create free Azure account (portal.azure.com)
+* [x] Create a free Azure account (portal.azure.com)
 * [x] Note what's included: $200 credit (30 days), 12 months of popular
 services free, always-free services
 * [x] Explore the portal: Virtual Machines, Entra ID, Resource Groups
@@ -16,7 +16,7 @@ by accident
 
 ## Notes
 
-**Task 1 - Create free Azure account (portal.azure.com)**
+**Task 1 - Create a free Azure account (portal.azure.com)**
 
  Created an Azure account. Signup required a phone number and a card on file even though the account itself is free. 
 

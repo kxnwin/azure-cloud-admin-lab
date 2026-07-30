@@ -3,37 +3,35 @@
 Hands-on Azure/Microsoft Entra ID administration lab, built to develop real
 administration skills toward a Systems Administrator → Cloud
 Administrator career path. This lab runs in parallel with a separate
-[hybrid on-prem Active Directory + Entra ID lab](https://github.com/kxnwin/onprem-hybrid-identity-lab) and Phase 4 below ties the two together.
+[On-Prem Hybrid Identity Lab](https://github.com/kxnwin/onprem-hybrid-identity-lab) and Phase 4 below ties the two together.
 
 ## Why this lab exists
 
-I currently work as a Service Desk Specialist supporting Active Directory,
-Entra ID, and identity/access management for a 20,000+ user healthcare enterprise
-environment. This lab is where I practice admin-level skills — Entra ID user/group management, RBAC and Conditional Access, resource groups and VMs, networking — that go beyond what I do day-to-day on the service desk.
+This lab is something I built to learn cloud administration skills, mainly around the Azure portal and Microsoft Entra ID, which I work with daily at my job. Day-to-day, my work in Active Directory and Entra ID is mostly looking things up like user accounts, group memberships, MFA methods, and lockout status to help troubleshoot issues. I also use an internal tool that can do some of those things as well but also gives me the ability to reset user passwords. This lab is where I go past day-to-day troubleshooting and actually practice the admin side: creating users and groups, assigning roles, setting up policies, that kind of thing. 
 
 ## Roadmap
 
 * [x] **Phase 1 — Environment Setup**
 
-  * [x] Create free Azure account
+  * [x] Create a free Azure account (portal.azure.com)
   * [x] Note what's included (credit, free services, always-free tier)
   * [x] Explore the portal (Entra ID, Virtual Machines, Resource Groups)
   * [x] Set a spending alert/budget
 
-
 * [x] **Phase 2 — Entra ID Fundamentals**
 
   * [x] Create test users and groups
-  * [x] Explore and assign built-in RBAC roles
+  * [x] Explore and assign built-in Microsoft Entra ID and Azure roles
   * [x] Configure a Conditional Access policy
   * [x] Create a Dynamic Group with an attribute-based rule
 
 * [x] **Phase 3 — Core Azure Resource Management**
 
-  * [x] Create a Resource Group and deploy a free-tier VM
-  * [x] Practice start/stop/resize operations
-  * [x] Build a Virtual Network + subnet
-  * [x] Apply an Azure Policy (e.g., required tagging)
+  * [x] Create a Resource Group
+  * [x] Deploy a free-tier Virtual Machine (VM) into it
+  * [x] Practice start/stop/resize operations on the VM
+  * [x] Build a Virtual Network + Subnet
+  * [x] Apply an Azure Policy (required tagging)
 
 * [x] **Phase 4 — Hybrid Identity Tie-In**
 
@@ -70,9 +68,8 @@ azure-cloud-admin-lab/
 * **Platform:** Microsoft Azure (free tier)
 * **Identity:** Microsoft Entra ID
 * **Learning path:** Microsoft Learn — AZ-104 (Azure Administrator Associate)
-* **Companion project:** On-prem Hyper-V hybrid AD/Entra ID lab
+* **Companion project:** On-Prem Hybrid Identity Lab
 
 ## Status
 
 🟡 In progress — Phase 5.
-
